@@ -218,12 +218,7 @@ class Derp
 
         @defined_commands[current_statement].call
     end
-
-    def debug
-        scan_labels
-        puts @labels
-    end
 end
 
-derp = Derp.new "la:a:ou:hello:la:b:ou:bye:gt:2:3:END:b:"
+derp = Derp.new "ou:hello world:"
 derp.run
